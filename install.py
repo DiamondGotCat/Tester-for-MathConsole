@@ -11,7 +11,7 @@ response = requests.get(url)
 if response.status_code == 200:
     # レスポンスのテキストデータをファイルに書き込む
     os.mkdir("/usr/local/share/mathconsole/plugins/tester/")
-    with open("/usr/local/share/mathconsole/plugins/", "w", encoding="utf-8") as file:
+    with open("/usr/local/share/mathconsole/plugins/tester/main.py", "w", encoding="utf-8") as file:
         file.write(response.text)
     print("Installed")
 else:
